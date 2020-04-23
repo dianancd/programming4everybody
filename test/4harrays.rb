@@ -38,7 +38,7 @@ posts = ["post 1", "post 2", "post 3"]
 posts << "post 4"
 puts posts
 
-or 
+#or 
 posts = ["post 1", "post 2", "post 3"]
 posts.push("post 4")
 puts posts
