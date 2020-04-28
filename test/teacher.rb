@@ -26,3 +26,6 @@ class Teacher
     @age += 1 # behaviour/action that modifies the age attribute!
   end
 end
+
+
+
