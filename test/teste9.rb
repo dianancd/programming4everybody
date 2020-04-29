@@ -33,14 +33,14 @@ class Teacher
     country: "Italy"
   }
   
-  # Instances of the Teacher model, initialized with some attributes
-  gabriele = Teacher.new(attributes)
-  mariana  = Teacher.new(name: "Mariana", country: "Portugal")
-  
-  # Actions executed on the instance of the model (behaviours)
-  print_teacher_welcome_message = ->(teacher) { puts teacher.welcome_message }
-  [gabriele, mariana].each(&print_teacher_welcome_message)
-  
-  gabriele.birthday
-  puts "He is turning #{gabriele.age}" # => 27
+  diana = Teacher.new(name:"Diana", country:"Portugal", age:27)
+
+
+  print_welcome = ->(t) {puts t.welcome_message}
+  [diana].each(&print_welcome)
+
+  diana.birthday
+  puts "She is turning #{diana.age}"
+
+
   
